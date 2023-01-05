@@ -1,24 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ToDoList from './ToDoList';
 
-const storageKey = 'todos'
-
 function App() {
-  const [todos, setToDos] = useState([])
+  const storedTodos = JSON.parse(localStorage.getItem('todos'))
+  const [todos, setToDos] = useState(storedTodos)
   const todoNameRef = useRef()
 
   useEffect(()=>{
-    const storedTodos = JSON.parse(localStorage.getItem(storageKey))
-    if(storedTodos){
-      setToDos(prevTodos => [...prevTodos, ...storedTodos])
-      console.log("T")
-    } 
-  }, [])
-
-  useEffect(()=>{
-    localStorage.setItem(storageKey, JSON.stringify(todos))
-    console.log("test")
+    localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
+
+  function toggleTodo(id){
+    const newTodos = [...todos]
+    const todo = newTodos.find(todo => todo.id === id)
+    todo.complete = !todo.complete
+    setToDos(newTodos)
+  }
 
   function handleAddTodo(e){
     const name = todoNameRef.current.value
@@ -29,13 +26,18 @@ function App() {
     todoNameRef.current.value = null
   }
 
+  function handleClearTodos(){
+    const newTodos = todos.filter(todo => !todo.complete)
+    setToDos(newTodos)
+  }
+
   return (
     <>
-      <ToDoList todos = {todos}/>
+      <ToDoList todos = {todos} toggleTodo = {toggleTodo}/>
       <input ref={todoNameRef} type="text"/>
       <button onClick={handleAddTodo}>Add Todo</button>
-      <button>Clear Completed Todos</button>
-      <div>0 left to do</div>
+      <button onClick={handleClearTodos}>Clear Completed Todos</button>
+      <div>{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
   )
 }
