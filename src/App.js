@@ -15,6 +15,7 @@ function App() {
     const todo = newTodos.find(todo => todo.id === id)
     todo.complete = !todo.complete
     setToDos(newTodos)
+    console.log('test')
   }
 
   function handleAddTodo(e){
