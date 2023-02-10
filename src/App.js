@@ -1,46 +1,35 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ToDoList from './ToDoList';
-
-function App() {
-  const storedTodos = JSON.parse(localStorage.getItem('todos'))
-  const [todos, setToDos] = useState(storedTodos)
-  const todoNameRef = useRef()
-
-  useEffect(()=>{
-    localStorage.setItem('todos', JSON.stringify(todos))
-  }, [todos])
-
-  function toggleTodo(id){
-    const newTodos = [...todos]
-    const todo = newTodos.find(todo => todo.id === id)
-    todo.complete = !todo.complete
-    setToDos(newTodos)
-    console.log('test')
+import AppHeader from './common/components/AppHeader'
+import css from './css/app.css'
+  
+class App extends React.Component {
+  
+  constructor(props) {
+    super(props)
+    this.state = {
+      tab: 'About'
+    }
+    this.setTab = this.setTab.bind(this);
   }
-
-  function handleAddTodo(e){
-    const name = todoNameRef.current.value
-    if(name === '') return
-    setToDos(prevTodos =>{
-      return [...prevTodos, {id:name, name: name, complete: false}]
-    })
-    todoNameRef.current.value = null
+  
+  setTab(tab) {
+    console.log(tab)
+    this.setState({ tab:tab })
   }
-
-  function handleClearTodos(){
-    const newTodos = todos.filter(todo => !todo.complete)
-    setToDos(newTodos)
+  
+  render() {
+    return (
+      <div className='app'>
+        <AppHeader tab={this.state.tab} setActiveTab={this.setTab}/>
+        {/* <ToDoList todos = {todos} toggleTodo = {toggleTodo}/>
+        <input ref={todoNameRef} type="text"/>
+        <button onClick={handleAddTodo}>Add Todo</button>
+        <button onClick={handleClearTodos}>Clear Completed Todos</button>
+        <div>{getToDoLength()} left to do</div> */}
+      </div>
+    );
   }
-
-  return (
-    <>
-      <ToDoList todos = {todos} toggleTodo = {toggleTodo}/>
-      <input ref={todoNameRef} type="text"/>
-      <button onClick={handleAddTodo}>Add Todo</button>
-      <button onClick={handleClearTodos}>Clear Completed Todos</button>
-      <div>{todos.filter(todo => !todo.complete).length} left to do</div>
-    </>
-  )
 }
-
+  
 export default App;
