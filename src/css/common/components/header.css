@@ -8,6 +8,7 @@
     background-image : linear-gradient(to bottom, 
     #031517, 
     white 2000%);
+    flex: 0 1 auto;
 }
 
 .teamIcon{
@@ -23,11 +24,25 @@
 
 .nav_btns{
     float: right;
-    margin-top:46px;
+    margin-top:47px;
+}
+
+.nav_btns_ff{
+    float: right;
+    margin-top:47px;
 }
 
 .nav_btn{
     width: 80px;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+    display: inline-block;
+    color: aqua;
+    border: 1px solid transparent;
+}
+.nav_btn_ff{
+    width: 81px;
     text-decoration: none;
     padding: 20px;
     font-size: 18px;
@@ -51,7 +66,7 @@
         linear-gradient(to bottom, transparent, white) 1 50%;
 }
 
-.nav_btn:hover{
+.nav_btn:hover, .nav_btn_ff:hover{
     cursor: pointer;
     background-color: transparent;
     /* background-image:

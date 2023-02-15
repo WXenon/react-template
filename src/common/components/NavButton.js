@@ -8,7 +8,7 @@ export default function NavButton({name, tab, setActive}) {
     }
 
     return (
-        <div className={'nav_btn' + (tab===name ? ' active' : '')} onClick={handleChangeTab}>
+        <div className={(window.localStorage.browserVersion==='ff' ? 'nav_btn_ff' : 'nav_btn') + (tab===name ? ' active' : '')} onClick={handleChangeTab}>
             {name}
         </div>
     )
