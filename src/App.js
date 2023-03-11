@@ -3,6 +3,13 @@ import ToDoList from './ToDoList';
 import AppHeader from './common/components/AppHeader'
 import css from './css/app.css'
 import About from './pages/About.js'
+import Services from './pages/Services.js'
+import {
+  BrowserRouter as Router,
+  Link,
+  Routes,
+  Route
+} from 'react-router-dom'
   
 class App extends React.Component {
   
@@ -15,7 +22,6 @@ class App extends React.Component {
   }
   
   setTab(tab) {
-    console.log(tab)
     this.setState({ tab:tab })
   }
 
@@ -122,12 +128,19 @@ class App extends React.Component {
       window.localStorage.setItem('browserVersion', 'blink');
     }
     return (
-      <div className='app'>
-        <div className='body'>
-          <AppHeader tab={this.state.tab} setActiveTab={this.setTab}/>
-          {this.renderContent()}
+      <Router>
+        <div className='app'>
+          <div className='body'>
+            <AppHeader tab={this.state.tab} setActiveTab={this.setTab}/>
+            {/* {this.renderContent()} */}
+            <Routes>
+               <Route path="/" element={<About setActiveTab={this.setTab}/>}/>
+               <Route path="/about" element={<About setActiveTab={this.setTab}/>}/>
+               <Route path="/services" element={<Services/>}/>
+            </Routes>
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }

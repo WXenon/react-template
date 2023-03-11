@@ -55,6 +55,7 @@ img{
     background-color: aqua;
     border-style: hidden;
     border-radius: 2rem;
+    text-decoration: none;
 }
 
 #serviceBtn:hover{

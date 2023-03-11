@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import css from '../css/pages/about.css'
 import cryptoworks from '../common/images/cryptoworks.png'
+import { Link } from 'react-router-dom'
   
 class About extends React.Component {
   
@@ -22,7 +23,7 @@ class About extends React.Component {
             <div className='right'>
               <div>
                 <img id="cryptoworks" src={cryptoworks} alt="image"/>
-                <div id="serviceBtn">See Our Services</div>
+                <Link id="serviceBtn" onClick={()=>this.props.setActiveTab('Services')} to="/Services">See Our Services</Link>
               </div>
             </div>
         </div>
