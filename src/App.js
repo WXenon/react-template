@@ -25,59 +25,62 @@ class App extends React.Component {
     this.setState({ tab:tab })
   }
 
-  renderContent(){
-    if(this.state.tab === 'About'){
-      return (
-        <>
-          <About setActiveTab={this.setTab}/>
-        </>
-      )
-    }
-    if(this.state.tab === 'Services'){
-      return (
-        <>
-          Services
-        </>
-      )
-    }
-    if(this.state.tab === 'The Team'){
-      return (
-        <>
-          Team
-        </>
-      )
-    }
-    if(this.state.tab === 'FAQ'){
-      return (
-        <>
-          FAQ
-        </>
-      )
-    }
-    if(this.state.tab === 'Contact'){
-      return (
-        <>
-          Contact
-        </>
-      )
-    }
-    if(this.state.tab === 'Socials'){
-      return (
-        <>
-          Socials
-        </>
-      )
-    }
-    if(this.state.tab === 'Info'){
-      return (
-        <>
-          Info
-        </>
-      )
-    }
-  }
+  // renderContent(){
+  //   if(this.state.tab === 'About'){
+  //     return (
+  //       <>
+  //         <About setActiveTab={this.setTab}/>
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'Services'){
+  //     return (
+  //       <>
+  //         Services
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'The Team'){
+  //     return (
+  //       <>
+  //         Team
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'FAQ'){
+  //     return (
+  //       <>
+  //         FAQ
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'Contact'){
+  //     return (
+  //       <>
+  //         Contact
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'Socials'){
+  //     return (
+  //       <>
+  //         Socials
+  //       </>
+  //     )
+  //   }
+  //   if(this.state.tab === 'Info'){
+  //     return (
+  //       <>
+  //         Info
+  //       </>
+  //     )
+  //   }
+  // }
   
-  render() {// Opera 8.0+
+  render() {
+    var browserlang = navigator.language || navigator.userLanguage;
+    window.localStorage.setItem('siteLang', browserlang);
+    // Opera 8.0+
     var isOpera = false
     if(window.opr !== undefined || navigator.userAgent.indexOf(' OPR/') >= 0 ){
       isOpera = true

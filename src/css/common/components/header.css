@@ -104,7 +104,7 @@
 
 .nav_btn:hover, .nav_btn_ff:hover{
     cursor: pointer;
-    animation: animateGradient 0.5s ease-out 0s 1 normal forwards;
+    animation: animateGradient 0.7s ease-out 0s 1 normal forwards;
     /* background-color: transparent; */
 }
 

@@ -1,0 +1,94 @@
+{
+    "native":{
+        "en":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        },
+        "zh":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        },
+        "ml":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSsC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        },
+        "tm":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSsC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        },
+        "jp":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSsC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        },
+        "gm":{
+            "nav":{
+                "about":"About",
+                "services":"Services",
+                "the_team":"The Team",
+                "faq":"FAQ",
+                "contact":"Contact",
+                "socials":"Socials",
+                "info":"Info"
+            },
+            "about":{
+                "title": "BSsC Gaming project & NFT Marketplace",
+                "detail": "Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.<p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!"
+            }
+        }
+    }
+}

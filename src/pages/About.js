@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import css from '../css/pages/about.css'
 import cryptoworks from '../common/images/cryptoworks.png'
 import { Link } from 'react-router-dom'
+import InfoCard from '../common/components/containers/InfoCard'
+import { Localise } from '../Localise'
   
 class About extends React.Component {
   
@@ -14,11 +16,10 @@ class About extends React.Component {
       <>
         <div className="summary">
             <div className='left'>
-              <div>
-                <b>BSC Gaming project & NFT Marketplace</b>
-                <p>Here at DCXP we offer all your gaming and NFTs needs in one place, we plan to have our own gaming project as well as a gaming marketplace.</p>
-                <p>We also aim to have a live auction so you can buy and sell all your NFTs at ease for the best price!</p>
-              </div>
+              <InfoCard title={Localise().about.title} 
+                paragraphs={Localise().about.detail}
+                expandable={false} expanded={true}
+              />
             </div>
             <div className='right'>
               <div>

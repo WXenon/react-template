@@ -2,14 +2,14 @@ import React from 'react'
 import css from '../../css/common/components/header.css'
 import { Link } from 'react-router-dom'
 
-export default function NavButton({name, tab, setActive}) {
+export default function NavButton({urlName, name, tab, setActive}) {
     const handleChangeTab = ()=>{
-        setActive(name)
+        setActive(urlName)
     }
-    let linkName = name
-    if(name.includes(" ")){
+    let linkName = urlName
+    if(urlName.includes(" ")){
         linkName = ''
-        var array = name.split(' ');
+        var array = urlName.split(' ');
         array.forEach(word => {
             linkName += word + "_"
         });
@@ -19,7 +19,7 @@ export default function NavButton({name, tab, setActive}) {
     }
 
     return (
-        <Link className={(window.localStorage.browserVersion==='ff' ? 'nav_btn_ff' : 'nav_btn') + (tab===name ? ' active' : '')} onClick={handleChangeTab} to={"/" + linkName}>
+        <Link className={(window.localStorage.browserVersion==='ff' ? 'nav_btn_ff' : 'nav_btn') + (tab===urlName ? ' active' : '')} onClick={handleChangeTab} to={"/" + linkName}>
             {name}
         </Link>
     )
