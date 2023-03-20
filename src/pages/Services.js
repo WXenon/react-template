@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import css from '../css/pages/about.css'
-import cryptoworks from '../common/images/cryptoworks.png'
+// import cryptoworks from '../common/images/cryptoworks.png'
   
 class Services extends React.Component {
   

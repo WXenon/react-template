@@ -1,0 +1,29 @@
+{
+    "members":[
+        {
+            "name": "D. Carvell",
+            "description": "d_carvell",
+            "photo": "/images/DCXP.jpeg"
+        },
+        {
+            "name": "W. X. Hoon",
+            "description": "w_x_hoon",
+            "photo": "/images/DCXP.jpeg"
+        },
+        {
+            "name": "Jaeger",
+            "description": "jaeger",
+            "photo": "/images/DCXP.jpeg"
+        },
+        {
+            "name": "M. Ken",
+            "description": "m_ken",
+            "photo": "/images/DCXP.jpeg"
+        },
+        {
+            "name": "P. Samuel",
+            "description": "p_sam",
+            "photo": "/images/DCXP.jpeg"
+        }
+    ]
+}

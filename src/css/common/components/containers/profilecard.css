@@ -1,0 +1,17 @@
+.profilecard{
+    width: 200px;
+    height: 250px;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+.profile_pic{
+    height: 190px;
+    width: 190px;
+}
+
+.profile_name{
+    text-align: center;
+}

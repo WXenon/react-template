@@ -2,7 +2,23 @@
     color: aqua;
 }
 
-.infocard_title{
+.infocard .expanded{
+
+}
+
+.unexpanded .infocard_title{
+    background-color: aqua;
+    margin: 0px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: #031517;
+    border: 1px solid aqua;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 30px;
+}
+
+.expanded .infocard_title{
     background-color: aqua;
     margin: 0px;
     padding: 5px;

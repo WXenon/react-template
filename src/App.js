@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ToDoList from './ToDoList';
-import AppHeader from './common/components/AppHeader'
+import AppHeader from './components/common/AppHeader'
 import css from './css/app.css'
 import About from './pages/About.js'
 import Services from './pages/Services.js'
+import TheTeam from './pages/TheTeam';
 import {
   BrowserRouter as Router,
   Link,
@@ -140,6 +141,7 @@ class App extends React.Component {
                <Route path="/" element={<About setActiveTab={this.setTab}/>}/>
                <Route path="/about" element={<About setActiveTab={this.setTab}/>}/>
                <Route path="/services" element={<Services/>}/>
+               <Route path="/the_team" element={<TheTeam/>}/>
             </Routes>
           </div>
         </div>
