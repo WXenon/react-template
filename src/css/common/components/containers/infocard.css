@@ -2,8 +2,16 @@
     color: aqua;
 }
 
-.infocard .expanded{
+.expandIcon_right, .expandIcon_down{
+    float: right;
+}
 
+.expandIcon_right{
+    rotate: 270deg;
+}
+
+.expandable .infocard .infocard_title:hover{
+    cursor: pointer;
 }
 
 .unexpanded .infocard_title{
@@ -36,4 +44,8 @@
     border-radius: 0px 0px 20px 20px;
     white-space: pre-line;
     font-size: 25px;
+}
+
+.hidden{
+    display: none;
 }

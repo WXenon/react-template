@@ -23,6 +23,22 @@
                     "m_ken": "Based in Kuala Lumpur, Malaysia . Was skeptical about crypto all these years till recently only to discover the huge potential in it. I now believe it will be massive the coming years.",
                     "p_sam": "Hello, I'm Preethish. Entered the crypto universe in Early 2021 after analyzing for over a year and a half. I am one of the team's community lead with vast experience when it comes to handling socials. We move together."
                 }
+            },
+            "faq":{
+                "q":{
+                    "contract_address":"What is DCXP Contract Address?",
+                    "nft":"What is an NFT?",
+                    "gaming":"What is crypto gaming?",
+                    "gas_fee":"What are gas fees?",
+                    "tokenomics":"What are tokenomics?"
+                },
+                "a":{
+                    "contract_address":"0xf42850e00a19f4844f69ac2e6cdfc5684195b1d9",
+                    "nft":"NFT is an acronym for a non-fungible token that is created through blockchain technology.<p>As its name suggests, the non-fungible token is unique in its form and not replaceable by another duplicate unit.<p>You can also look at the non-fungible token as a distinctive digital property that does not have another copy in the world.",
+                    "gaming":"With blockchain gaming, players and developers are on the same side. Nobody controls the game's outcome, and anyone can analyze the code used in most blockchain-based games. This transparency means that if a developer adds an update the community doesn't like, the game can be split and different versions built.",
+                    "gas_fee":"The terms 'gas' and 'gas fees' were introduced on the Ethereum network as a measure of the cost of validating transactions.<p>These transactions include crypto swaps, exchange, trading, crypto transfers, among others. The gas concept helped to distinguish between the actual value of the ETH crypto and the cost of computational power used to validate transactions on the Ethereum blockchain. Over time, gas fees in crypto have become a synonym for network fees charged to users to validate transactions on other blockchains.",
+                    "tokenomics":"Tokenomics is derived from the combination of two words 'token' & 'economics'.<p>It is the quality of a token that convinces a user or investor to adopt it and help build the ecosystem around the underlying project of the token.<p>Tokenomics is responsible for variance in price tags of several crypto projects. It is fundamental when determining and analyzing the potentials of a cryptocurrency in order to have higher chances of making more money and profits from these projects rather than losing your investments."
+                }
             }
         },
         "zh":{

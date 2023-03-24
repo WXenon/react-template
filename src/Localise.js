@@ -9,16 +9,16 @@ export const Localise = (lang)=>{
             lang = "zh"
         }
         if(window.localStorage.siteLang.includes("ml")){
-            lang = "zh"
+            lang = "ml"
         }
         if(window.localStorage.siteLang.includes("tm")){
-            lang = "zh"
+            lang = "tm"
         }
         if(window.localStorage.siteLang.includes("jp")){
-            lang = "zh"
+            lang = "jp"
         }
         if(window.localStorage.siteLang.includes("gm")){
-            lang = "zh"
+            lang = "gm"
         }
 
         if(lang === "en"){

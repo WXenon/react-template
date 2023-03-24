@@ -9,6 +9,14 @@ class About extends React.Component {
   
   constructor(props) {
     super(props)
+    this.state = {
+      expanded: false
+    }
+    this.toggleExpand = this.toggleExpand.bind(this);
+  }
+
+  toggleExpand(){
+    this.setState({ expanded:!this.state.expanded })
   }
   
   render() {
@@ -18,7 +26,8 @@ class About extends React.Component {
             <div className='left'>
               <InfoCard title={Localise().about.title} 
                 paragraphs={Localise().about.detail}
-                expandable={false} expanded={false}
+                expandable={false} expanded={this.state.expanded}
+                toggleExpand={this.toggleExpand}
               />
             </div>
             <div className='right'>

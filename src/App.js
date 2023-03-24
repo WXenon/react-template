@@ -11,6 +11,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import Faq from './pages/Faq';
   
 class App extends React.Component {
   
@@ -142,6 +143,7 @@ class App extends React.Component {
                <Route path="/about" element={<About setActiveTab={this.setTab}/>}/>
                <Route path="/services" element={<Services/>}/>
                <Route path="/the_team" element={<TheTeam/>}/>
+               <Route path="/faq" element={<Faq/>}/>
             </Routes>
           </div>
         </div>
